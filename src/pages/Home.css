@@ -1,0 +1,185 @@
+/* Home.css */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background with curved partition */
+.background-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+.bg-left {
+  width: 50%;
+  background-color: white;
+}
+
+.bg-right {
+  width: 50%;
+  background-color: #a0b1c7; /* Gray-800 (darker) */
+}
+
+/* Curved SVG overlay */
+.curved-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content Container */
+.content-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+/* Left Side Text */
+.text-container {
+  max-width: 36rem;
+}
+
+.design-develop-text {
+  text-transform: uppercase;
+  color: #d97706; /* Yellow-600 */
+  font-weight: 700; /* Bold */
+  font-size: 1.125rem; /* 18px - bigger than before */
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.main-heading {
+  font-size: 3.75rem; /* 60px */
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.main-heading .name-text {
+  color: #d97706; /* Yellow-600 */
+}
+
+.main-heading .black-text {
+  color: black;
+}
+
+.main-heading .full-stack-text {
+  color: black;
+  white-space: nowrap; /* Keeps Full Stack Developer in single line */
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+.download-btn {
+  padding: 0.75rem 2rem;
+  border: 2px solid #d97706; /* Yellow border */
+  background-color: #d97706; /* Yellow background */
+  border-radius: 0.375rem;
+  color: white; /* White text */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #55b119; /* Red-700 on hover */
+  border-color: #55b119;
+  color: white;
+}
+
+
+/* Right Side Image */
+.image-container {
+  width: 500px;
+  height: 300px;
+  flex-shrink: 0;
+  position: relative;
+   justify-content: flex-end;
+  z-index: 20;
+}
+
+.image-placeholder {
+  width: 500px;
+  height: 600px;
+  background: linear-gradient(to bottom right, #d1d5db, #9ca3af); /* Gray gradient */
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image-content {
+  text-align: center;
+  color: #4b5563; /* Gray-600 */
+}
+
+.profile-icon {
+  width: 6rem;   /* Bigger circle */
+  height: 6rem;
+  background-color: #6b7280; /* Gray-500 */
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+}
+
+.image-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.image-subtitle {
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-container {
+    padding: 0 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .main-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    width: 350px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+  
+  .main-heading .full-stack-text {
+    white-space: normal; /* Allow wrapping on mobile */
+  }
+  
+  .image-placeholder {
+    width: 300px;
+    height: 400px;
+  }
+}
