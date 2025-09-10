@@ -344,7 +344,7 @@ return (
     {/* GitHub */}
     <div className="flex items-center space-x-4">
       <FaGithub size={30} className="text-white" />
-      <a href="https://github.com/rajaudayabanu" target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <a href="https://github.com/rajaudayabanu/my-portfolio" target="_blank" rel="noopener noreferrer" className="hover:underline">
         github.com
       </a>
     </div>
