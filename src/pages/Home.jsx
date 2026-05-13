@@ -139,7 +139,7 @@ return (
     </div>
     <div className="flex flex-col items-center">
       <FaNodeJs size={60} className="text-green-500" />
-      <p className="mt-3 font-semibold">Node.js</p>
+      <p className="mt-3 font-semibold">Node.js[Basics]</p>
     </div>
     <div className="flex flex-col items-center">
       <p className="text-6xl">🔗</p>
